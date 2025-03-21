@@ -31,6 +31,14 @@ public class Main {
                     System.out.print("Ingrese el precio del producto: ");
                     double percio = scanner.nextDouble();
                     scanner.nextLine();
+
+                    nombreProductos.add(nombre);
+                    cantidadesProductos.add(cantidad);
+                    precioProductos.add(percio);
+
+                    System.out.println("Producto agregado de manera correcta.");
+
+                    break;
             }
 
 
