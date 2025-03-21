@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        double Iva = 0.12;
         ArrayList<String> nombreProductos = new ArrayList<>();
         ArrayList<Integer>cantidadesProductos = new ArrayList<>();
         ArrayList<Double> precioProductos = new ArrayList<>();
@@ -39,6 +40,20 @@ public class Main {
                     System.out.println("Producto agregado de manera correcta.");
 
                     break;
+
+                case 2 :
+                    if (nombreProductos.isEmpty()){
+                        System.out.println("No hay productos en el inventario");
+                    }else {
+                        System.out.println("/n ***Lista de Productos***");
+                        for (int i = 0; i <nombreProductos.size();i++){
+                            System.out.println("Producto: " + nombreProductos.get(i) +
+                                    ", Cantidad: " + cantidadesProductos.get(i) +
+                                    ", Precio: $" + precioProductos.get(i) +
+                                    ", Precio con IVA: Q" + (precioProductos.get(i) * (1 + Iva)));
+                        }
+                    }
+
             }
 
 
