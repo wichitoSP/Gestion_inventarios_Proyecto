@@ -52,7 +52,27 @@ public class Main {
                                     ", Precio: $" + precioProductos.get(i) +
                                     ", Precio con IVA: Q" + (precioProductos.get(i) * (1 + Iva)));
                         }
+
                     }
+                    break;
+
+                case 3:
+                    System.out.print("Ingrese el nombre del producto a actualizar: ");
+                    String nombreActualizar = scanner.nextLine();
+                    int indexActualizar = nombreProductos.indexOf(nombreActualizar);
+                    if (indexActualizar == -1){
+                        System.out.println("Producto no encontrado.");
+
+                    }else {
+                        System.out.print("Ingrese la nueva cantidad: ");
+                        int nuevaCantidad = scanner.nextInt();
+                        scanner.nextLine();
+
+                        cantidadesProductos.set(indexActualizar,nuevaCantidad);
+                        System.out.println("Catiddad de productos actualizados");
+                    }
+                    break;
+
 
             }
 
