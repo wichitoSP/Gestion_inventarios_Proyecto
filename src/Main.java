@@ -17,6 +17,20 @@ public class Main {
             int opcion = scanner.nextInt();
             scanner.nextLine();
 
+            switch (opcion){
+
+                case 1 :
+                    System.out.print("Ingrese el nombre del producto:");
+                    String nombre = scanner.nextLine();
+                    System.out.print("Ingrese la cantidad del producto:");
+                    int cantidad = scanner.nextInt();
+                    System.out.print("Ingrese el precio del producto: ");
+                    double percio = scanner.nextDouble();
+                    scanner.nextLine(); 
+            }
+
+
+
 
 
 
