@@ -1,9 +1,13 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        ArrayList<String> nombreProductos = new ArrayList<>();
+        ArrayList<Integer>cantidadesProductos = new ArrayList<>();
+        ArrayList<Double> precioProductos = new ArrayList<>();
 
         while (true){
 
@@ -26,7 +30,7 @@ public class Main {
                     int cantidad = scanner.nextInt();
                     System.out.print("Ingrese el precio del producto: ");
                     double percio = scanner.nextDouble();
-                    scanner.nextLine(); 
+                    scanner.nextLine();
             }
 
 
