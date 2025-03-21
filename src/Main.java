@@ -14,7 +14,10 @@ public class Main {
             System.out.println("4.Elimnar Producto");
             System.out.println("5. Salir");
             System.out.print("Seleccione una opción del menu: ");
-            scanner.nextLine(); // Para el siguiente salto de linea
+            int opcion = scanner.nextInt();
+            scanner.nextLine();
+
+
 
 
 
