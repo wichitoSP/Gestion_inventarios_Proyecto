@@ -88,6 +88,15 @@ public class Main {
 
                     break;
 
+                case 5:
+
+                    System.out.println("Saliendo del programa.........");
+                    scanner.close();
+                    return;
+
+                default:
+                    System.out.println("Opción no válida.Intente de nuevo.");
+
 
             }
 
